@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="helloworld" class="HelloWorld">
+        <property name="name" value="shabi"></property>
+        <property name="words" value="dajiba"></property>
+    </bean>
+    <bean id="Helloworld" class="HelloWorld">
+        <property name="name" value="缺心眼"></property>
+        <property name="words" value="你真笨"></property>
+    </bean>
+
+
+    <bean id="HelloWorld" class="com.hello.actions.ChHello">
+        <constructor-arg index="0"><value>你好</value></constructor-arg>
+    </bean>
+</beans>

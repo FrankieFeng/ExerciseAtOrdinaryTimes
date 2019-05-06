@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!DOCTYPE jboss-web PUBLIC
+        "-//JBoss//DTD Web Application 2.3V2//EN"
+    "http://www.jboss.org/j2ee/dtd/jboss-web_4_0.dtd">
+
+<jboss-web>
+	<class-loading java2ClassLoadingCompliance='true'>
+		<loader-repository>
+			com.example:archive=UmeServerCore
+			<loader-repository-config>
+				java2ParentDelegaton=true
+			</loader-repository-config>
+		</loader-repository>
+	</class-loading>
+	<context-root>UmeServerCore</context-root>
+	<!-- -->
+	<resource-ref>
+		<res-ref-name>jdbc/mskyhlzh</res-ref-name>
+		<jndi-name>java:/jdbc/mskyhlzh</jndi-name>
+	</resource-ref>
+	<resource-ref>
+		<res-ref-name>jdbc/servercore</res-ref-name>
+		<jndi-name>java:/jdbc/servercore</jndi-name>
+	</resource-ref>
+	<resource-ref>
+		<res-ref-name>jdbc/oracleRAC</res-ref-name>
+		<jndi-name>java:/jdbc/oracleRAC</jndi-name>
+	</resource-ref>
+	<resource-ref>
+		<res-ref-name>jdbc/umeedb</res-ref-name>
+		<jndi-name>java:/jdbc/umeedb</jndi-name>
+	</resource-ref>
+	<resource-ref>
+		<res-ref-name>jdbc/umeedb29</res-ref-name>
+		<jndi-name>java:/jdbc/umeedb29</jndi-name>
+	</resource-ref>
+	<resource-ref>
+		<res-ref-name>jdbc/edb</res-ref-name>
+		<jndi-name>java:/jdbc/edb</jndi-name>
+	</resource-ref>
+</jboss-web>
